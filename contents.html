@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcom!~ 백엔드 개발자를 꿈꾸는 유광현 홈페이지 입니다.</title>
+    <link rel="stylesheet" href="/Homepage/source/css/style.css">
+    <link rel="stylesheet" href="/Homepage/source/css/font.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/Homepage/source/js/javascript.js"></script>
+</head>
+
+<body>
+    <div class="grid2">
+        <nav>
+            <div class="nav-img">
+                <img src="https://i.ibb.co/Y03QJQH/image.gif" alt="">
+            </div>
+
+            <div class="title">
+                <h2 id="title1">BACKEND DEVELOPER</h2>
+                <h2 id="title2">YOO Gwang Hyun</h2>
+                <hr>
+            </div>
+            <ul>
+
+                <li>
+                    <span> <a href="index.html" class="link">HOME</a> </span>
+                </li>
+                <li>
+                    <span> <a href="contents.html#about" class="link">ABOUT</a> </span>
+                </li>
+                <li>
+                    <span> <a href="contents.html#project" class="link">PROJECT</a> </span>
+                </li>
+                <li>
+                    <span> <a href="contents.html#favorite" class="link">FAVORITE</a> </span>
+                </li>
+                <li>
+                    <span> <a href="contents.html#roadmap" class="link">ROADMAP</a> </span>
+                </li>
+                <li>
+                    <span> <a href="sign-in.html" class="link">SIGN IN</a> </span>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="sections">
+            <!-- About me-->
+            <div class="section" id="about">
+
+                <div class="section-title hidden ">
+                    <h1>Who am I</h1>
+                    <hr>
+                </div>
+
+                <div class="about hidden ">
+                    <div class="profileImg">
+                        <img src="https://i.ibb.co/hDVWn6q/selfi.jpg" alt="" id="selfi">
+                    </div>
+
+                    <div class="contentOuterbox">
+                        <div class="atext">
+                            <p>안녕하세요 😎
+                                코딩하는 것이 즐거운 행복한 예비 개발자입니다.</p>
+                            <p>현재 KH정보교육원에서 공부를 하고 있으며, 항상 지금보다 더 나은 결과를 가져오기 위해 <br> 새로운 것들을 많이 접하고 배우고 있습니다.</p>
+                        </div>
+                        <div class="contentsInnerbox">
+                            <div class="acontents">
+                                <img src= "https://i.ibb.co/0Z00bVk/person.png" alt="person" class="acontent-img">
+                                <p>이름 : 유광현</p><br>
+                            </div>
+
+                            <div class="acontents">
+
+                                <img src="https://i.ibb.co/znyBYxY/birthday-Cake.png" alt="" class="acontent-img">
+                                <p>생년월일 : 93.09.15</p>
+                            </div>
+                            <div class="acontents">
+
+                                <img src="https://i.ibb.co/CbQtZsQ/site.png" alt="" class="acontent-img">
+                                <p>주소지 : 서울특별시 동작구</p>
+                            </div>
+                        </div>
+                        <div class="contentsInnerbox">
+
+                            <div class="acontents">
+                                <img src="https://i.ibb.co/PZqC2mb/tel.png" alt="" class="acontent-img">
+                                <p>연락처 : 010-3005-2116</p>
+                            </div>
+                            <a class="AboutMe_email__38blp" href="mailto:ghyoo0915@naver.com">
+                                <div class="acontents" id="email-box">
+                                    <!-- js로 div클릭 시 메일보내기-->
+                                    <img src="https://i.ibb.co/g6MX8qx/email.png" alt="" class="acontent-img">
+                                    <p>email : ghyoo0915@naver.com</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- projects-->
+            <div class="section" id="project">
+                <div class="section-title hidden">
+                    <h1>Project</h1>
+                    <hr>
+                </div>
+                <div class="project hidden">
+                    <!-- left/rightSideButton 누를 때, 이전/이후 프로젝트로 전환-->
+                    <div id="leftSideButton" class="sideButton">
+                    </div>
+
+                    <div class="video">
+                        <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="pvideo"></iframe>
+                    </div>
+
+                    <div class="contentOuterbox pjtHidden" id="p-0">
+
+                        <div class="pcontents ptitle">
+                            <p>
+                            <h2> 자바 미니 프로젝트</h2>
+                            </p>
+                            <p>
+                            <h3>- PC방 관리/사용 프로그램 -</h3>
+                            </p>
+                        </div>
+
+                        <div class="pcontents ">
+                            <p id="members"><span>참여 멤버 : 유광현, 백지영, 김은희, 이윤희</span></p>
+                            <p class="ptext"> <span> 관리자 계정과 회원/비회원 계정으로 로그인이 가능합니다.
+                                <br>관리자 계정으로 로그인시, 관리자 화면으로 전환되며 PC방 상품 재고관리가 가능합니다.
+                                <br>(회원관리 기능은 미구현하여 아쉬움이 남습니다.)
+                                <br>회원/비회원은 동일한 사용자 화면으로 넘어가지만, 회원은 20% 요금할인을 적용받습니다.
+                                <br>오후 10시 이후에는 성인(20세 이상)만 로그인이 가능하며, 선불과 후불 요금을 선택하게 됩니다.
+                                <br>선불 요금은 정액제로 요금할인을 받으며, 회원은 pc이용 후에도 선불 시간이 저장되어 추후 로그인시 반영됩니다.
+                                <br>이용자의 상품 주문/결제는 관리자 페이지와 연동됩니다.
+
+                            </span>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="contentOuterbox pjtHidden" id="p-1">
+
+                        <div class="pcontents ptitle">
+                            <h2> 오구 페이지 </h2>
+                            <h3>- 홈페이지 제작 연습 -</h3>
+                        </div>
+
+                        <div class="pcontents " id="p-1">
+                            <p class="ptext">카카오톡 이모티콘 캐릭터인 '오구'의 덕후로써 제작한 홈페이지입니다.
+                                <br> 현재 홈페이지 제작 이전에 연습삼아 만든 홈페이지로, 수업때 배운 간단한 기능 몇가지를 적용했습니다.
+                                <br> grid를 적용해 header, nav, footer의 위치를 잡고, 마우스 호버 기능을 활용해
+                                <br> css효과를 적용했습니다. 링크를 통해 카카오톡 이모티콘 샵과 연동했으며,
+                                <br> 오구의 귀염뽀짝한 움짤들을 보실 수 있습니다!
+                                <br> 오구를 사랑해주세요~!!
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div id="rightSideButton" class="sideButton">
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+            </div>
+            <!-- favorite-->
+            <div class="section" id="favorite">
+                <div class="section-title hidden">
+                    <h1>Favorite</h1>
+                    <hr>
+                </div>
+                <div class="favorite hidden">
+                   <div class="fcontentBox">
+                    <a href="https://dbrhkdgus.github.io/ogu/" target="_blank"> <img src="https://i.ibb.co/VNdBVDZ/image.png" alt="" class="fimg"></a>
+                    <div class="ptext">
+
+                        <p>제가 가장 애정하는 캐릭터 '오구'입니다!. 
+                            <br>하얀 몸뚱이에 검정 눈, 
+                            <br> 노란 부리와 발바닥이 전부지만 
+                            <br> 하찮은 몸짓과 말투에 
+                            <br> 여러분도 오구에게 빠져드실 거에요!
+                            <br>
+                            <br> 모두 모두 갓오구 합시다!
+                            <br>  이미지를 누르시면 오구페이지로 넘어갑니당 😍
+                        </p>
+                    </div>    
+                    </div>
+                    <div class="fcontentBox">
+                        <a href="https://soundcloud.com/3txq1kdz4cno/sets/my-playlist" target="_blank"> <img src="https://i.ibb.co/7WVSZ1B/music.png" alt="" class="fimg"></a>
+                        <div class="ptext">
+
+                            <p>유튜브와 사운드클라우드에서 
+                                <br> 음악을 찾아 돌아다니고 있습니당!
+                                <br> 아무도 모르는 숨겨진 갓띵곡을 
+                                <br> 발굴했을 때의 쾌감!
+                                <br>
+                                <br> 나만의 리스트에 저장해놓고 남몰래 듣고 있어요.
+                                <br> 이미지를 누르시면 저의 플리를 훔쳐보실 수 있습니당 😋
+                            </p>
+                        </div>
+                    </div>
+                    <div class="fcontentBox">
+                        <img src="https://i.ibb.co/6YS0yFm/gamer.png" alt="" class="fimg">
+                        <div class="ptext">
+
+                            <p>저의 유일한 취미는 게임입니다!
+                                <br> 본 네이쳐 아싸이기 때문에 멀티플레이로 
+                               <br> 실시간 대전게임은 별로 하지 않구요.
+                                <br> 느긋하게 즐길 수 있는 게임들을 하고 있습니다.
+                                <br>
+                                <br> 문명6, 휴먼카인드, 스테이트오브디케이2 등등 혼자 조용히 오래할 수 있는 게임을 좋아해요!
+                                <br> 친구들과 가끔씩 배틀그라운드를 즐기고 있습니다.🎮
+                            </div>
+                        </p>
+                    </div>
+                    <div class="fcontentBox">
+                        <img src="https://i.ibb.co/RbT13xK/ping-pong.png" alt="" class="fimg">
+                        <div class="ptext">
+
+                            <p>탁구.. 제가 참 좋아하는 스포츠인데요...
+                                <br> 제가 또 왕년에는 어마어마했습니다.
+                                <br> 고1 때였나요? 탁구하나로 1,2,3학년 전교를 제패..!
+                            </p>
+                        </div>
+                        </div>
+                </div>
+                
+
+            </div>
+            <!-- roadmap-->
+            <div class="section" id="roadmap">
+
+                <div class="section-title hidden">
+                    <h1>Roadmap</h1>
+                    <hr>
+                </div>
+                <div class="roadmap hidden" id="rcontentBox">
+                    <div class="contentOuterbox">
+                        <div class="atext">
+                        </div>
+                        <div class="contentsInnerbox">
+                            <div class="rimg">
+
+                                <img src="https://i.ibb.co/1zq9gjB/datastucture.png" alt="" class="rcontent-img">
+                            </div>
+                            <div class="rcontents">
+
+                                <h3>Data Structure / Algorithm</h3>
+                                <p>자료구조와 알고리즘을 더욱 공부하려고 합니다. 
+                                <br> 해마다 새로운 기술이 등장하지만 결국 기초가 중요하다고 생각합니다.
+                                <br> 아무리 많은 기술을 알고있어도 자신에게 주어진 문제에 어떤 기술이 적합한지 선택할 수 없다면 새로운 기술력은 빛을 발휘하기 어려울 것이라 생각합니다.
+                                
+                                <br> 자료구조 알고리즘을 공부하여 효율적인 문제해결 능력을 지닌 개발자로 성장하고자 합니다.</p>
+
+                            </div>
+                        </div>
+                        <div class="contentsInnerbox">
+                            <div class="rimg">
+
+                                <img src="https://i.ibb.co/QbP2ZtS/box.png" alt="" class="rcontent-img">
+                            </div>
+                            <div class="rcontents">
+
+                                <h3>Containerization</h3>
+                                <p> 백엔드개발자로서 다양한 서버를 경험하기 위해 docker와 kubernetes를 공부하고자 합니다.
+                                <br>가상화, 컨테이너 기술이 생기기 이전엔 어떤 서버를 구축할 때마다 OS에 따라 설치방법과 운영 환경이 달라 운영에 어려움을 겪었지만,
+                                <br>현재는 도커를 이용해 간편하게 캡슐화하여 관리할 수 있어 수요가 많아진 것 같습니다.
+                                <br>실제로 구인광고를 보면 docker/kubernetese 경험자를 많이 찾는 것을 확인하였고,
+                                <br>docker에만 그치지 않고 컨테이너화에 대해 공부하고자 합니다.</p>
+
+                            </div>
+                        </div>
+                        <div class="contentsInnerbox">
+                            <div class="rimg">
+
+                                <img src="https://i.ibb.co/Fsh1GGg/server.png" alt="" class="rcontent-img">
+                            </div>
+                            <div class="rcontents">
+
+                                <h3>Data Structure / Algorithm</h3>
+                                <p>자료구조와 알고리즘을 더욱 공부하려고 합니다. 
+                                <br> 해마다 새로운 기술이 등장하지만 결국 기초가 중요하다고 생각합니다.
+                                <br> 아무리 많은 기술을 알고있어도 자신에게 주어진 문제에 어떤 기술이 적합한지 선택할 수 없다면 새로운 기술력은 빛을 발휘하기 어려울 것이라 생각합니다.
+                                
+                                <br> 자료구조 알고리즘을 공부하여 효율적인 문제해결 능력을 지닌 개발자로 성장하고자 합니다.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

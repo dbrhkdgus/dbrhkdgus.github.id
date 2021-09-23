@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sign-in</title>
+    <link rel="stylesheet" href="/Homepage/source/css/style.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/Homepage/source/js/sign.js"></script>
+
+
+</head>
+<body>
+​<div class="grid">
+
+    <nav>
+
+        <div class="nav-img">
+            <img src="https://i.ibb.co/Y03QJQH/image.gif" alt="">
+        </div>
+
+        <div class="title">
+            <h2 id="title1">BACKEND DEVELOPER</h2>
+            <h2 id="title2">YOO Gwang Hyun</h2>
+            <hr>
+        </div>
+
+        <ul>
+
+            <li>
+                <span> <a href="index.html" class="link">HOME</a> </span>
+            </li>
+            <li>
+                <span> <a href="contents.html#about" class="link">ABOUT</a> </span>
+            </li>
+            <li>
+                <span> <a href="contents.html#project" class="link">PROJECT</a> </span>
+            </li>
+            <li>
+                <span> <a href="contents.html#favorite" class="link">FAVORITE</a> </span>
+            </li>
+            <li>
+                <span> <a href="contents.html#roadmap" class="link">ROADMAP</a> </span>
+            </li>
+            <li>
+                <span> <a href="sign-in.html" class="link">SIGN IN</a> </span>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="sign">
+
+        <form action="javascript:alert('제출성공');" name="memberFrm">
+            <div class="input-box"> 
+                <input id="userid" type="text" name="userid" placeholder="아이디"> 
+                <label for="userid">아이디</label>
+            </div>
+            
+            <div class="input-box"> 
+                <input id="password" type="password" name="pwd" placeholder="비밀번호"> 
+                <label for="password">비밀번호</label> 
+            </div>
+            
+            
+            
+            <div class="input-box signHidden"> 
+                <input id="pwdCheck" type="password" name="pwdCheck" placeholder="비밀번호 확인"> 
+                <label for="password">비밀번호 확인</label> 
+            </div>
+            
+            <div class="input-box signHidden"> 
+                <input id="username" type="text" name="username" placeholder="이름"> 
+                <label for="username">이름</label> 
+            </div>
+            
+            <div class="input-box ssnHidden"> 
+                <input id="ssn1" type="text" name="ssn1" placeholder="주민등록 번호"> 
+                <label for="ssn1">주민등록 번호</label> 
+                <span> - </span>
+                <input id="ssn2" type="password" name="ssn2" placeholder="주민등록 번호"> 
+            </div>
+
+            <div class="input-box ssnHidden"> 
+                <input id="tel1" type="text" name="tel1" placeholder="전화번호"> 
+                <label for="tel1">전화번호</label> 
+                <span> - </span>
+                <input id="tel2" type="text" name="tel2" placeholder="전화번호"> 
+                <span> - </span>
+                <input id="tel3" type="text" name="tel3" placeholder="전화번호"> 
+            </div>
+            
+            
+            <div class="input-box signHidden"> 
+                <input id="email" type="email" name="email" placeholder="이메일"> 
+                <label for="email">이메일</label> 
+            </div>
+            
+            <div class="registerbox">
+
+                <input type="button" id="register" value="회원가입">
+            </div>
+            
+            <input type="button" value="로그인" id="loginBtn">
+            
+            
+        </form>
+    </div>
+
+    
+</body>
+</html>

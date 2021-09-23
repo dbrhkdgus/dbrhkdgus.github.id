@@ -1,0 +1,600 @@
+/* 글씨체 */
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Josefin+Sans:wght@600&family=Stick+No+Bills:wght@400;600&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    /* overflow: hidden; */
+}
+.welcome{
+    border: 2px solid #0000;
+}
+body{
+    margin: 0px;
+    position: relative;
+    background-color: #F2F2F2;
+}
+.grid{
+    display: flex;
+    margin: 0px auto;
+    
+    flex-direction: column;
+    
+   
+}
+.grid2{
+    position: relative;
+}
+
+nav{
+    display: flex;
+    /* position: relative; */
+    background-color: #F2DC6D;
+    height: 47%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    overflow: hidden;
+}
+nav ul li{
+    position: relative;
+    height: 25px;
+}
+span{
+    color: #0D0D0D;
+}
+
+.nav-img{
+    line-height: 0px;
+}
+.link::before{
+    
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    display: block;
+    width: 220%;
+    height: 100%;
+    z-index: -1;
+    background-color: #000;
+    -webkit-transform: scaleX(.3);
+    transform: scaleX(.3);
+    opacity: 0;
+    transition: all .3s
+  }
+  .link:hover::before{
+    opacity: 1;
+    border-radius: 10%;
+    background-color: #435AD9;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+    transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+  }
+  .link:hover{
+    color: white;
+    font-size: 20px;
+    display: inline;
+  }
+
+.title{
+    margin-left: 20px;
+    margin-bottom: 0px;
+    color: black;
+    line-height: 0px;
+    overflow: hidden;
+    
+}
+.title hr{
+    position: absolute;
+    width: 200%;
+    margin: 0px;
+    left: 0px;
+    
+}
+#title1{
+    font-size: 10px;
+    font-family: AlfaSlabOne-ArchitectsDaughter-Regular;
+}
+#title2{
+    font-family: ChakraPetch-SemiBold;
+    font-size: 25px;
+    line-height: 0px;
+}
+nav > ul {
+    
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 90%;
+    align-items: center
+    
+
+}
+nav > ul> li{
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    
+}
+a {
+    text-decoration: none;
+    color: black;
+    
+    font-size: 11px;
+    font-family: 'Signika', sans-serif;
+    font-weight: 600;;
+}
+
+
+.index {
+    margin-top: 200px;
+    /* justify-content: space-around; */
+    /* margin-bottom: 60px; */
+    /* overflow: hidden; */
+    /* align-content: center; */
+   
+    /* flex-wrap: wrap; */
+}
+
+.indeximg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index div img{
+    width: 300px;
+    /* height: 300px; */
+    text-align: center;
+}
+
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    position: absolute;
+    bottom: 20px;
+    color: #fff;;
+    border: 0;
+    background: none;
+    z-index: 1;
+     top: 20px;
+     cursor: pointer;
+}
+
+.slick-center:hover{
+    box-shadow: #F2DC6D 0px -50px 36px -28px inset;
+}
+.index-desc{
+    margin-top:26px;
+    opacity:0;
+    transform:translateY(30%);
+    transition:opacity .8s, transform .8s;
+}
+
+.explain{
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #435AD9;
+    font-weight: 600;;
+}
+
+
+
+/* contents CSS */
+
+.sections{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.section-title{
+    position: absolute;
+    width: 300px;
+    left: 10%;
+    top: 100px;
+}
+.section-title > h1{
+    font-family: ChakraPetch-SemiBold;
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.section-title > hr {
+    position: relative;
+    background-color: #435AD9;
+    height: 4px;
+    border: 0px;
+    width: 250px;
+    top: -3px;
+    left: -50px;
+}
+
+.about, .roadmap, .project, .favorite{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 100px;
+    align-content: flex-end;
+    position: absolute;
+    top: 250px;
+
+    width: 80%;
+    overflow: hidden;
+    justify-content: center;
+    
+}
+
+.favorite, .roadmap{
+    margin-top: 0px;
+    align-items: flex-start;
+}
+.fcontentBox{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 320px;
+    align-items: center;
+}
+#rcontentBox{
+    top : 150px;
+}
+
+.project{
+    top: 85px;
+    align-items: flex-start;
+    padding-top: 150px;
+}
+.pcontents h2{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 50px;
+}
+.pcontents h3{
+    font-family: 'Do Hyeon', sans-serif;
+}
+#members{
+    font-family: 'Do Hyeon', sans-serif;
+}
+.ptext{
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.profileImg{
+    width: 300px;
+    height: 300px;
+    border-radius: 70%;
+    overflow: hidden;
+    
+    margin-left: 90px;
+    margin-right: 85px;
+   
+}
+#selfi{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contentOuterbox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contentsInnerbox{
+    display: flex;
+    align-items: center;
+}
+
+.acontent-img{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+
+}
+
+.atext{
+    text-align: left;
+    margin-bottom: 50px;
+}
+.atext p{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 30px;
+}
+.acontents p{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 25px;
+}
+
+.acontents {
+    display: flex;
+    padding-right: 50px;
+    align-items: center;
+}
+.rcontents{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 90px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.rcontents p{
+    text-align: left;
+    font-size: 18px;
+}
+.rcontents h3{
+    font-size: 30px;
+}
+.rcontent-img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.about-contents-box p{
+    margin-left: 40px;
+}
+
+.sideButton{
+    width: 10%;
+    height: 400px;
+    margin-top: 100px;
+
+}
+#leftSideButton{
+    background-image: url('https://i.ibb.co/fQHRPGY/left.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 50px;
+    margin-right: 30px;
+}
+
+#rightSideButton{
+    background-image: url('https://i.ibb.co/Ns9mQWR/right.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    margin-left: 30px;
+}
+.video{
+    width: 50%;
+    height: 50%;
+    text-align: start;
+    
+}
+
+.pvideo{
+    width: 100%;
+    height: 477px;
+}
+
+.project > .contentOuterbox{
+    width: 50%;
+    align-items: center;
+    
+}
+.ptitle{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+#p-p {
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+.fimg{
+    width: 180px;
+    height: 180px;
+    margin-bottom: 30px;
+}
+.ptext{
+    text-align: left;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+
+#about{
+    position: relative;
+    background-color: #F2F2F2;
+    height: 65vw;
+}
+#project{
+    background-color: #F2F2F2;
+    height: 65vw;
+}
+#favorite{
+    background-color: #F2F2F2;
+    height: 80vw;
+}
+#roadmap{
+    background-color: #F2F2F2;
+    height: 110vw;
+}
+
+
+
+/* js 동작용 css */
+.hidden{
+    opacity: 0;
+    transform: translateX(-400px);
+    transition: all .6s ease-in-out;
+}
+.active{
+    opacity: 1;
+    transform: translate(0px);
+
+}
+.pjtHidden{
+    display: none;
+}
+.pjtActive{
+    display: block;
+}
+
+
+
+
+
+
+/* 이퀄라이저 */
+
+footer{
+    /* border-top: 2px solid gray; */
+    text-align: center;
+    position: relative;
+    margin-top: -110px;
+    overflow: hidden;
+    height: 360px;
+}
+
+.equalizer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    top: 100px;
+    left: 95%;
+    height: 50%;
+}
+#visualiser{
+    margin-top: 200px;
+    width: 90%;
+    height: 300px;
+}
+
+#mute{
+    width: 30px;
+    height: 30px;
+    opacity: 0.75;
+}
+#mute:hover{
+    cursor: pointer;
+}
+
+/* 회원가입 */
+
+.sign{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+form {
+    padding: 10px;
+    width: 600px;
+}
+
+.input-box {
+    position: relative;
+    margin: 10px 0;
+}
+
+.input-box>input {
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px #ccc;
+    padding: 20px 0px 5px 0px;
+    font-size: 14pt;
+    width: 100%;
+}
+
+input::placeholder {
+    color: transparent;
+}
+
+input:placeholder-shown+label {
+    color: #0D0D0D;
+    font-size: 14pt;
+    top: 15px;
+
+}
+
+input:focus+label,
+label {
+    color: #0D0D0D;
+    font-size: 10pt;
+    pointer-events: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+    border-bottom: solid 1px #0D0D0D;
+    outline: none;
+}
+
+#loginBtn {
+    background-color: #8aa1a1;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 35px;
+    font-size: 14pt;
+    margin-top: 100px;
+}
+
+.registerbox{
+    margin-top: 15px;
+    text-align: right;
+}
+
+#register {
+    /* 회원가입 버튼 백그라운드 컬러 찾기 */
+    background-color: #8aa1a1; 
+    border: none;
+    color: white;
+    border-radius: 5px;
+    width: 75px;
+    height: 35px;
+    font-size: 11pt;
+    
+}
+
+
+.ssn-box{
+    display: flex;
+}
+
+
+.signHidden, .ssnHidden{
+    display: none;
+}
+
+.signActive{
+    display: block;
+}
+
+#login-sign{
+    display: table-row;
+}
+.loginBtnHidden{
+    display: none;
+}
+

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "AlfaSlabOne-Regular";
+    src: url(/Homepage/font/AlfaSlabOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "ArchitectsDaughter-Regular";
+    src: url(/Homepage/font/ArchitectsDaughter-Regular.ttf);
+}
+@font-face {
+    font-family: "ChakraPetch-SemiBold";
+    src: url(/Homepage/font/ChakraPetch-SemiBold.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
